@@ -10,7 +10,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 Instalación
 Clona el repositorio:
 
-`git clone https://github.com/tu-usuario/tu-repositorio.git`
+`git clone https://github.com/william-david-gomez-quirzoz/profile.git`
 
 Navega al directorio del proyecto:
 
