@@ -18,24 +18,14 @@
 }
 
 .circle {
-  border-radius: 50%;
-  border: 1px solid var(--white);
-  background-image: linear-gradient(var(--white) 0%, transparent);
-  background-attachment: no-repaeat;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  padding: calc(var(--base-size) * 5);
-  width: 100%;
+  display: none;
 }
-
 .container_2 {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   height: 100%;
-  gap: calc(var(--base-size) * 6);
+  width: 100%
 }
 
 .mark {
@@ -46,4 +36,26 @@
   width: calc(var(--base-size) * 7);
   height: calc(var(--base-size) * 7);
   color: var(--white);
+}
+
+@media only screen and (min-width: 1000px) {
+  .circle {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    background-image: linear-gradient(var(--white) 0%, transparent);
+    background-attachment: no-repaeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--base-size) * 5);
+    width: 100%;
+  }
+  .container_2 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    gap: calc(var(--base-size) * 6);
+  }
 }

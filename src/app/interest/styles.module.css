@@ -16,12 +16,21 @@
 }
 
 .icon {
-   width: 50px;
-   height: 50px;
-   color: var(--white);
+  width: 30px;
+  height: 30px;
+  color: var(--white);
 }
 .interest {
   display: flex;
   flex-direction: column;
   gap: calc(var(--base-size) * 6);
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+ }
 }
