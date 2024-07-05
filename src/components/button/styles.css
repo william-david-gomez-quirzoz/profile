@@ -10,6 +10,7 @@
 }
 
 .text {
+    border: none;
     font-size: calc(var(--base-size) * 4);
     font-weight: bold;
     color: var(--grey);
