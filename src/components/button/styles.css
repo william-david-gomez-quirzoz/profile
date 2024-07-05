@@ -1,0 +1,19 @@
+.container {
+    font-size: calc(var(--base-size) * 4);
+    font-weight: bold;
+    padding: 10px 15px;
+    color: var(--grey);
+    border-radius: calc(var(--base-size) * 2);
+    background-color: var(--secondary);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.text {
+    font-size: calc(var(--base-size) * 4);
+    font-weight: bold;
+    color: var(--grey);
+    background-color: transparent;
+    cursor: pointer;
+    width: fit-content;
+}

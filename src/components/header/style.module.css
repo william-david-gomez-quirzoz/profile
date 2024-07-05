@@ -1,0 +1,28 @@
+.paths {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--base-size) * 20);
+}
+
+.paths > li {
+    font-size: calc(var(--base-size) * 5);
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: calc(var(--base-size) * 5);
+    color: var(--white);
+}
+.profile {
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.active {
+    color: var(--secondary);
+}

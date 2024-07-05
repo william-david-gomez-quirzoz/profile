@@ -1,0 +1,25 @@
+.container {
+    border-radius: calc(var(--base-size) * 2);
+    padding: calc(var(--base-size) * 5);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--base-size) * 6);
+}
+
+.titlexl {
+    font-size: calc(var(--base-size) * 10);
+    color: var(--white);
+    display: block;
+    white-space: pre;
+}
+
+.title {
+    font-size: calc(var(--base-size) * 6);
+    color: var(--white);
+}
+
+.description {
+    font-size: calc(var(--base-size) * 4);
+    font-weight: 400;
+    color: var(--white);
+}

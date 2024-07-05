@@ -1,0 +1,20 @@
+.tab {
+    border-radius: calc(var(--base-size) * 2);
+    padding: calc(var(--base-size) * 2);
+    background-color: var(--white);
+    color: var(--dark);
+    width: fit-content;
+    cursor: pointer;
+}
+.tab_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--base-size) * 4);
+}
+
+.tab_panel {
+    width: 100%
+}

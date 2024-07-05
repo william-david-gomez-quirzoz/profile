@@ -1,0 +1,30 @@
+.img {
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.text {
+    color: var(--white);
+}
+.container{ 
+    display: flex;
+    align-items: start;
+    gap: calc(var(--base-size) * 2);
+
+}
+
+.icon {
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--base-size) * 2);
+}

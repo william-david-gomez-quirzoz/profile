@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { roboto } from "src/styles/fonts";
+import Header from "src/components/header";
+import styles from "./page.module.css";
+import { MdContactMail } from "react-icons/md";
+import { FloatButton } from "src/components/float-button";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${roboto.className} ${styles.container}`}>
+        <Header />
+
+        <main>{children}</main>
+
+        <FloatButton>
+          <Link href='/contact'><MdContactMail className={styles.contact_icon} /></Link>
+        </FloatButton>
+      </body>
     </html>
   );
 }

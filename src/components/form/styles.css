@@ -1,0 +1,32 @@
+.input {
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: var(--white);
+  color: var(--dark);
+  border-radius: calc(var(--base-size) * 2);
+}
+
+.textarea {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: var(--white);
+    color: var(--dark);
+    border-radius: calc(var(--base-size) * 2);
+}
+
+legend {
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: var(--base-size);
+}
+input {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+.title {
+    font-size: calc(var(--base-size) * 5);
+    color: var(--white);
+}
+
+.title_xl {
+    font-size: calc(var(--base-size) * 7);
+    color: var(--white);
+}
+.description {
+    font-size: calc(var(--base-size) * 4);
+    color: var(--white);
+}
+.error {
+    font-size: calc(var(--base-size) * 3);
+    color: var(--error);
+}

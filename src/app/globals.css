@@ -1,9 +1,9 @@
 :root {
+  --base-size: 4px;
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-mono: "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
+    "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -42,34 +42,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+    --primary: rgba(32, 75, 204);
+    --dark: rgb(20, 26, 46);
+    --white: #ffffff;
+    --secondary: #ebc83d;
+    --secondary-opacity: #ebc83dee;
+    --grey: #666666;
+    --error: rgb(217, 67, 50)
   }
 }
 
@@ -85,14 +64,19 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
 body {
+  max-width: 1000px;
+  margin: auto;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    rgba(2, 0, 36, 1) 47%,
+    rgba(9, 9, 121, 1) 92%,
+    rgba(0, 212, 255, 1) 112%
+  );
 }
 
 a {
@@ -100,8 +84,50 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style: none;
+  color: var(--white);
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.shadow-container {
+  mask-image: linear-gradient(var(--primary) 95%, transparent);
+}
+
+.fade_in {
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+.fade_out {
+  animation-name: fade_out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: .2;
+    scale: .2;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+    scale: .1;
+  }
+  100% {
+    opacity: 0;
+    scale: 0;
+    display: none;
   }
 }
